@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H7a-0X-YE7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quotes Board-->
+        <scene sceneID="XNg-gu-yP0">
+            <objects>
+                <tableViewController id="XHm-Kl-xy1" customClass="WDTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZoV-yt-Y2W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="150" id="rTu-TT-W5W" customClass="WDTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTu-TT-W5W" id="vaK-mE-zvG">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBO-G9-ids">
+                                            <rect key="frame" x="8" y="8" width="584" height="141.5"/>
+                                            <subviews>
+                                                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfc-lY-LWr">
+                                                    <rect key="frame" x="0.0" y="21" width="584" height="99"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Very Famous Quote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLX-ci-P8O">
+                                                            <rect key="frame" x="8" y="78" width="568" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="D0l-oH-UpP"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O3U-mt-utE">
+                                                            <rect key="frame" x="257" y="0.0" width="70" height="70"/>
+                                                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="70" id="6Vz-gW-6KD"/>
+                                                                <constraint firstAttribute="height" constant="70" id="faK-ou-4YB"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="TLX-ci-P8O" secondAttribute="bottom" id="4oj-yX-i7M"/>
+                                                        <constraint firstItem="TLX-ci-P8O" firstAttribute="top" secondItem="O3U-mt-utE" secondAttribute="bottom" constant="8" id="8LR-N1-P2d"/>
+                                                        <constraint firstAttribute="height" constant="99" id="8gV-iz-kRS"/>
+                                                        <constraint firstItem="TLX-ci-P8O" firstAttribute="leading" secondItem="wfc-lY-LWr" secondAttribute="leading" constant="8" id="INQ-Xf-W4E"/>
+                                                        <constraint firstItem="O3U-mt-utE" firstAttribute="top" secondItem="wfc-lY-LWr" secondAttribute="top" id="P05-px-ldB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="TLX-ci-P8O" secondAttribute="trailing" constant="8" id="UQZ-Jq-mds"/>
+                                                        <constraint firstItem="TLX-ci-P8O" firstAttribute="centerX" secondItem="O3U-mt-utE" secondAttribute="centerX" id="Y3W-Qt-HHP"/>
+                                                        <constraint firstAttribute="centerX" secondItem="O3U-mt-utE" secondAttribute="centerX" id="bFk-gR-bfJ"/>
+                                                        <constraint firstAttribute="width" constant="126" id="r0U-Nf-le6"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="r0U-Nf-le6"/>
+                                                            <exclude reference="Y3W-Qt-HHP"/>
+                                                        </mask>
+                                                    </variation>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="0.25" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="wfc-lY-LWr" secondAttribute="centerX" id="M3A-Ir-zsU"/>
+                                                <constraint firstItem="wfc-lY-LWr" firstAttribute="leading" secondItem="HBO-G9-ids" secondAttribute="leading" id="Utg-Br-leX"/>
+                                                <constraint firstAttribute="centerY" secondItem="wfc-lY-LWr" secondAttribute="centerY" constant="0.25" id="k0y-Te-HRu"/>
+                                                <constraint firstAttribute="trailing" secondItem="wfc-lY-LWr" secondAttribute="trailing" id="pO7-ty-jMO"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="HBO-G9-ids" secondAttribute="bottom" constant="-8" id="Gdr-t4-zZG"/>
+                                        <constraint firstItem="HBO-G9-ids" firstAttribute="top" secondItem="vaK-mE-zvG" secondAttribute="topMargin" id="gRf-gN-uu9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="HBO-G9-ids" secondAttribute="trailing" id="svm-9t-Ngg"/>
+                                        <constraint firstItem="HBO-G9-ids" firstAttribute="leading" secondItem="vaK-mE-zvG" secondAttribute="leadingMargin" id="x7P-6N-BmA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="celebrityAvatar" destination="O3U-mt-utE" id="i6i-ZZ-NIE"/>
+                                    <outlet property="quoteLabel" destination="TLX-ci-P8O" id="LJK-LI-gHh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XHm-Kl-xy1" id="9t6-JY-e13"/>
+                            <outlet property="delegate" destination="XHm-Kl-xy1" id="E3Y-1G-juI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Quotes Board" id="LdP-Qx-Z72">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Nao-C5-Wel">
+                            <connections>
+                                <action selector="reload:" destination="XHm-Kl-xy1" id="xsc-KH-apr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQq-vw-qqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pfZ-CX-Q4S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H7a-0X-YE7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyW-Pc-dUd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XHm-Kl-xy1" kind="relationship" relationship="rootViewController" id="ffA-jJ-xVv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bW-P1-9TG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="323"/>
+        </scene>
+    </scenes>
+</document>
