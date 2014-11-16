@@ -18,6 +18,7 @@
 		6DCE36BB1A182CEF007763BA /* WDPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36BA1A182CEF007763BA /* WDPost.m */; };
 		6DCE36BF1A182FBF007763BA /* WDPostManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36BE1A182FBF007763BA /* WDPostManager.m */; };
 		6DFE56A91A189C720062B792 /* WDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE56A81A189C720062B792 /* WDTableViewController.m */; };
+		6DFE56AC1A189DD40062B792 /* WDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE56AB1A189DD40062B792 /* WDCardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		6DCE36BE1A182FBF007763BA /* WDPostManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDPostManager.m; path = Model/WDPostManager.m; sourceTree = "<group>"; };
 		6DFE56A71A189C720062B792 /* WDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewController.h; sourceTree = "<group>"; };
 		6DFE56A81A189C720062B792 /* WDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableViewController.m; sourceTree = "<group>"; };
+		6DFE56AA1A189DD40062B792 /* WDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDCardView.h; path = View/WDCardView.h; sourceTree = "<group>"; };
+		6DFE56AB1A189DD40062B792 /* WDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDCardView.m; path = View/WDCardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				6DFE56A71A189C720062B792 /* WDTableViewController.h */,
 				6DFE56A81A189C720062B792 /* WDTableViewController.m */,
 				6DCE36971A182319007763BA /* Main.storyboard */,
+				6DFE56AD1A189DD80062B792 /* View */,
 				6DCE36BC1A182CF5007763BA /* Model */,
 				6DCE36B61A182515007763BA /* WDTableViewCell.h */,
 				6DCE36B71A182515007763BA /* WDTableViewCell.m */,
@@ -143,6 +147,15 @@
 				6DCE36BA1A182CEF007763BA /* WDPost.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		6DFE56AD1A189DD80062B792 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DFE56AA1A189DD40062B792 /* WDCardView.h */,
+				6DFE56AB1A189DD40062B792 /* WDCardView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 				6DCE36B81A182515007763BA /* WDTableViewCell.m in Sources */,
 				6DCE36901A182319007763BA /* main.m in Sources */,
 				6DCE36BF1A182FBF007763BA /* WDPostManager.m in Sources */,
+				6DFE56AC1A189DD40062B792 /* WDCardView.m in Sources */,
 				6DFE56A91A189C720062B792 /* WDTableViewController.m in Sources */,
 				6DCE36BB1A182CEF007763BA /* WDPost.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import "WDTableViewCell.h"
 #import "WDPost.h"
+#import "View/WDCardView.h"
 
 @interface WDTableViewCell()
 @property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
@@ -18,8 +19,6 @@
 
 # pragma mark - Initializer
 - (void)awakeFromNib {
-    // Initialization code
-    
 }
 
 
