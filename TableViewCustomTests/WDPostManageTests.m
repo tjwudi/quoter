@@ -31,7 +31,7 @@
     XCTestExpectation *expectation = [self expectationWithDescription:@"Wait for download"];
     
     [self.postManager downloadPostsWithCompletion:^(NSArray *posts) {
-        XCTAssertEqual(posts.count, 2);
+        XCTAssertEqual(posts.count, 4);
         XCTAssert([posts[0] isKindOfClass:[WDPost class]]);
         [expectation fulfill];
     }];

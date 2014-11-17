@@ -1,473 +1,1175 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		6D05D4C51A183CE4008D623A /* WDPostManageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D05D4C41A183CE4008D623A /* WDPostManageTests.m */; };
-		6DCE36901A182319007763BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE368F1A182319007763BA /* main.m */; };
-		6DCE36931A182319007763BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36921A182319007763BA /* AppDelegate.m */; };
-		6DCE36991A182319007763BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE36971A182319007763BA /* Main.storyboard */; };
-		6DCE369B1A182319007763BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE369A1A182319007763BA /* Images.xcassets */; };
-		6DCE369E1A182319007763BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCE369C1A182319007763BA /* LaunchScreen.xib */; };
-		6DCE36AA1A182319007763BA /* TableViewCustomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36A91A182319007763BA /* TableViewCustomTests.m */; };
-		6DCE36B81A182515007763BA /* WDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36B71A182515007763BA /* WDTableViewCell.m */; };
-		6DCE36BB1A182CEF007763BA /* WDPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36BA1A182CEF007763BA /* WDPost.m */; };
-		6DCE36BF1A182FBF007763BA /* WDPostManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCE36BE1A182FBF007763BA /* WDPostManager.m */; };
-		6DFE56A91A189C720062B792 /* WDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE56A81A189C720062B792 /* WDTableViewController.m */; };
-		6DFE56AC1A189DD40062B792 /* WDCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFE56AB1A189DD40062B792 /* WDCardView.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6DCE36A41A182319007763BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6DCE36821A182319007763BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6DCE36891A182319007763BA;
-			remoteInfo = TableViewCustom;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		6D05D4C41A183CE4008D623A /* WDPostManageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPostManageTests.m; sourceTree = "<group>"; };
-		6DCE368A1A182319007763BA /* TableViewCustom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCustom.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DCE368E1A182319007763BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DCE368F1A182319007763BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6DCE36911A182319007763BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6DCE36921A182319007763BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DCE36981A182319007763BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6DCE369A1A182319007763BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6DCE369D1A182319007763BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6DCE36A31A182319007763BA /* TableViewCustomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCustomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DCE36A81A182319007763BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DCE36A91A182319007763BA /* TableViewCustomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCustomTests.m; sourceTree = "<group>"; };
-		6DCE36B61A182515007763BA /* WDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewCell.h; sourceTree = "<group>"; };
-		6DCE36B71A182515007763BA /* WDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableViewCell.m; sourceTree = "<group>"; };
-		6DCE36B91A182CEF007763BA /* WDPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDPost.h; path = Model/WDPost.h; sourceTree = "<group>"; };
-		6DCE36BA1A182CEF007763BA /* WDPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDPost.m; path = Model/WDPost.m; sourceTree = "<group>"; };
-		6DCE36BD1A182FBF007763BA /* WDPostManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDPostManager.h; path = Model/WDPostManager.h; sourceTree = "<group>"; };
-		6DCE36BE1A182FBF007763BA /* WDPostManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDPostManager.m; path = Model/WDPostManager.m; sourceTree = "<group>"; };
-		6DFE56A71A189C720062B792 /* WDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewController.h; sourceTree = "<group>"; };
-		6DFE56A81A189C720062B792 /* WDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableViewController.m; sourceTree = "<group>"; };
-		6DFE56AA1A189DD40062B792 /* WDCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WDCardView.h; path = View/WDCardView.h; sourceTree = "<group>"; };
-		6DFE56AB1A189DD40062B792 /* WDCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WDCardView.m; path = View/WDCardView.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		6DCE36871A182319007763BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DCE36A01A182319007763BA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		6DCE36811A182319007763BA = {
-			isa = PBXGroup;
-			children = (
-				6DCE368C1A182319007763BA /* TableViewCustom */,
-				6DCE36A61A182319007763BA /* TableViewCustomTests */,
-				6DCE368B1A182319007763BA /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		6DCE368B1A182319007763BA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6DCE368A1A182319007763BA /* TableViewCustom.app */,
-				6DCE36A31A182319007763BA /* TableViewCustomTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6DCE368C1A182319007763BA /* TableViewCustom */ = {
-			isa = PBXGroup;
-			children = (
-				6DFE56A71A189C720062B792 /* WDTableViewController.h */,
-				6DFE56A81A189C720062B792 /* WDTableViewController.m */,
-				6DCE36971A182319007763BA /* Main.storyboard */,
-				6DFE56AD1A189DD80062B792 /* View */,
-				6DCE36BC1A182CF5007763BA /* Model */,
-				6DCE36B61A182515007763BA /* WDTableViewCell.h */,
-				6DCE36B71A182515007763BA /* WDTableViewCell.m */,
-				6DCE369A1A182319007763BA /* Images.xcassets */,
-				6DCE369C1A182319007763BA /* LaunchScreen.xib */,
-				6DCE368D1A182319007763BA /* Supporting Files */,
-			);
-			path = TableViewCustom;
-			sourceTree = "<group>";
-		};
-		6DCE368D1A182319007763BA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6DCE36911A182319007763BA /* AppDelegate.h */,
-				6DCE36921A182319007763BA /* AppDelegate.m */,
-				6DCE368E1A182319007763BA /* Info.plist */,
-				6DCE368F1A182319007763BA /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6DCE36A61A182319007763BA /* TableViewCustomTests */ = {
-			isa = PBXGroup;
-			children = (
-				6D05D4C41A183CE4008D623A /* WDPostManageTests.m */,
-				6DCE36A91A182319007763BA /* TableViewCustomTests.m */,
-				6DCE36A71A182319007763BA /* Supporting Files */,
-			);
-			path = TableViewCustomTests;
-			sourceTree = "<group>";
-		};
-		6DCE36A71A182319007763BA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6DCE36A81A182319007763BA /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6DCE36BC1A182CF5007763BA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6DCE36BD1A182FBF007763BA /* WDPostManager.h */,
-				6DCE36BE1A182FBF007763BA /* WDPostManager.m */,
-				6DCE36B91A182CEF007763BA /* WDPost.h */,
-				6DCE36BA1A182CEF007763BA /* WDPost.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		6DFE56AD1A189DD80062B792 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6DFE56AA1A189DD40062B792 /* WDCardView.h */,
-				6DFE56AB1A189DD40062B792 /* WDCardView.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		6DCE36891A182319007763BA /* TableViewCustom */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6DCE36AD1A182319007763BA /* Build configuration list for PBXNativeTarget "TableViewCustom" */;
-			buildPhases = (
-				6DCE36861A182319007763BA /* Sources */,
-				6DCE36871A182319007763BA /* Frameworks */,
-				6DCE36881A182319007763BA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TableViewCustom;
-			productName = TableViewCustom;
-			productReference = 6DCE368A1A182319007763BA /* TableViewCustom.app */;
-			productType = "com.apple.product-type.application";
-		};
-		6DCE36A21A182319007763BA /* TableViewCustomTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6DCE36B01A182319007763BA /* Build configuration list for PBXNativeTarget "TableViewCustomTests" */;
-			buildPhases = (
-				6DCE369F1A182319007763BA /* Sources */,
-				6DCE36A01A182319007763BA /* Frameworks */,
-				6DCE36A11A182319007763BA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6DCE36A51A182319007763BA /* PBXTargetDependency */,
-			);
-			name = TableViewCustomTests;
-			productName = TableViewCustomTests;
-			productReference = 6DCE36A31A182319007763BA /* TableViewCustomTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		6DCE36821A182319007763BA /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Alibaba Group";
-				TargetAttributes = {
-					6DCE36891A182319007763BA = {
-						CreatedOnToolsVersion = 6.1;
-					};
-					6DCE36A21A182319007763BA = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 6DCE36891A182319007763BA;
-					};
-				};
-			};
-			buildConfigurationList = 6DCE36851A182319007763BA /* Build configuration list for PBXProject "TableViewCustom" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 6DCE36811A182319007763BA;
-			productRefGroup = 6DCE368B1A182319007763BA /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				6DCE36891A182319007763BA /* TableViewCustom */,
-				6DCE36A21A182319007763BA /* TableViewCustomTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		6DCE36881A182319007763BA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DCE36991A182319007763BA /* Main.storyboard in Resources */,
-				6DCE369E1A182319007763BA /* LaunchScreen.xib in Resources */,
-				6DCE369B1A182319007763BA /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DCE36A11A182319007763BA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6DCE36861A182319007763BA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DCE36931A182319007763BA /* AppDelegate.m in Sources */,
-				6DCE36B81A182515007763BA /* WDTableViewCell.m in Sources */,
-				6DCE36901A182319007763BA /* main.m in Sources */,
-				6DCE36BF1A182FBF007763BA /* WDPostManager.m in Sources */,
-				6DFE56AC1A189DD40062B792 /* WDCardView.m in Sources */,
-				6DFE56A91A189C720062B792 /* WDTableViewController.m in Sources */,
-				6DCE36BB1A182CEF007763BA /* WDPost.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DCE369F1A182319007763BA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DCE36AA1A182319007763BA /* TableViewCustomTests.m in Sources */,
-				6D05D4C51A183CE4008D623A /* WDPostManageTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6DCE36A51A182319007763BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6DCE36891A182319007763BA /* TableViewCustom */;
-			targetProxy = 6DCE36A41A182319007763BA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6DCE36971A182319007763BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DCE36981A182319007763BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6DCE369C1A182319007763BA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DCE369D1A182319007763BA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		6DCE36AB1A182319007763BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		6DCE36AC1A182319007763BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6DCE36AE1A182319007763BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TableViewCustom/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		6DCE36AF1A182319007763BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TableViewCustom/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		6DCE36B11A182319007763BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TableViewCustomTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewCustom.app/TableViewCustom";
-			};
-			name = Debug;
-		};
-		6DCE36B21A182319007763BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TableViewCustomTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewCustom.app/TableViewCustom";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		6DCE36851A182319007763BA /* Build configuration list for PBXProject "TableViewCustom" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DCE36AB1A182319007763BA /* Debug */,
-				6DCE36AC1A182319007763BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6DCE36AD1A182319007763BA /* Build configuration list for PBXNativeTarget "TableViewCustom" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DCE36AE1A182319007763BA /* Debug */,
-				6DCE36AF1A182319007763BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6DCE36B01A182319007763BA /* Build configuration list for PBXNativeTarget "TableViewCustomTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DCE36B11A182319007763BA /* Debug */,
-				6DCE36B21A182319007763BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 6DCE36821A182319007763BA /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1B9BFE0CBDAC77D06674CC9D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2A1739C6AF711C97B630FBB8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>535164391339600D4D15BE87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2A1739C6AF711C97B630FBB8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5A92192039335889776EF565</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2A1739C6AF711C97B630FBB8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>69E64F40BE6CD3BA2D022CEC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D05D4C41A183CE4008D623A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WDPostManageTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6D05D4C51A183CE4008D623A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6D05D4C41A183CE4008D623A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6D10BC7A1A18EDF7006D01D2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36811A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6D10BC7A1A18EDF7006D01D2</string>
+				<string>6DCE368C1A182319007763BA</string>
+				<string>6DCE36A61A182319007763BA</string>
+				<string>6DCE368B1A182319007763BA</string>
+				<string>EB370E2FE5ED16D2673132B8</string>
+				<string>5A92192039335889776EF565</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36821A182319007763BA</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Alibaba Group</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>6DCE36891A182319007763BA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+					</dict>
+					<key>6DCE36A21A182319007763BA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+						<key>TestTargetID</key>
+						<string>6DCE36891A182319007763BA</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>6DCE36851A182319007763BA</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>6DCE36811A182319007763BA</string>
+			<key>productRefGroup</key>
+			<string>6DCE368B1A182319007763BA</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>6DCE36891A182319007763BA</string>
+				<string>6DCE36A21A182319007763BA</string>
+			</array>
+		</dict>
+		<key>6DCE36851A182319007763BA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6DCE36AB1A182319007763BA</string>
+				<string>6DCE36AC1A182319007763BA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6DCE36861A182319007763BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6DCE36931A182319007763BA</string>
+				<string>6DCE36B81A182515007763BA</string>
+				<string>6DCE36901A182319007763BA</string>
+				<string>6DCE36BF1A182FBF007763BA</string>
+				<string>6DFE56AC1A189DD40062B792</string>
+				<string>6DFE56A91A189C720062B792</string>
+				<string>6DCE36BB1A182CEF007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DCE36871A182319007763BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>535164391339600D4D15BE87</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DCE36881A182319007763BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6DCE36991A182319007763BA</string>
+				<string>6DCE369E1A182319007763BA</string>
+				<string>6DCE369B1A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DCE36891A182319007763BA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6DCE36AD1A182319007763BA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C969635BFA5F5111D97ADBCC</string>
+				<string>6DCE36861A182319007763BA</string>
+				<string>6DCE36871A182319007763BA</string>
+				<string>6DCE36881A182319007763BA</string>
+				<string>1B9BFE0CBDAC77D06674CC9D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TableViewCustom</string>
+			<key>productName</key>
+			<string>TableViewCustom</string>
+			<key>productReference</key>
+			<string>6DCE368A1A182319007763BA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>6DCE368A1A182319007763BA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TableViewCustom.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6DCE368B1A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DCE368A1A182319007763BA</string>
+				<string>6DCE36A31A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE368C1A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DFE56A71A189C720062B792</string>
+				<string>6DFE56A81A189C720062B792</string>
+				<string>6DCE36971A182319007763BA</string>
+				<string>6DFE56AD1A189DD80062B792</string>
+				<string>6DCE36BC1A182CF5007763BA</string>
+				<string>6DCE36B61A182515007763BA</string>
+				<string>6DCE36B71A182515007763BA</string>
+				<string>6DCE369A1A182319007763BA</string>
+				<string>6DCE369C1A182319007763BA</string>
+				<string>6DCE368D1A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TableViewCustom</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE368D1A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DCE36911A182319007763BA</string>
+				<string>6DCE36921A182319007763BA</string>
+				<string>6DCE368E1A182319007763BA</string>
+				<string>6DCE368F1A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE368E1A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE368F1A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36901A182319007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE368F1A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE36911A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36921A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36931A182319007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE36921A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE36971A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DCE36981A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36981A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36991A182319007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE36971A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE369A1A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE369B1A182319007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE369A1A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE369C1A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DCE369D1A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE369D1A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE369E1A182319007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE369C1A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE369F1A182319007763BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6DCE36AA1A182319007763BA</string>
+				<string>6D05D4C51A183CE4008D623A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DCE36A01A182319007763BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DCE36A11A182319007763BA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6DCE36A21A182319007763BA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6DCE36B01A182319007763BA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6DCE369F1A182319007763BA</string>
+				<string>6DCE36A01A182319007763BA</string>
+				<string>6DCE36A11A182319007763BA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6DCE36A51A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TableViewCustomTests</string>
+			<key>productName</key>
+			<string>TableViewCustomTests</string>
+			<key>productReference</key>
+			<string>6DCE36A31A182319007763BA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>6DCE36A31A182319007763BA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TableViewCustomTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6DCE36A41A182319007763BA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>6DCE36821A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>6DCE36891A182319007763BA</string>
+			<key>remoteInfo</key>
+			<string>TableViewCustom</string>
+		</dict>
+		<key>6DCE36A51A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>6DCE36891A182319007763BA</string>
+			<key>targetProxy</key>
+			<string>6DCE36A41A182319007763BA</string>
+		</dict>
+		<key>6DCE36A61A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6D05D4C41A183CE4008D623A</string>
+				<string>6DCE36A91A182319007763BA</string>
+				<string>6DCE36A71A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TableViewCustomTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36A71A182319007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DCE36A81A182319007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36A81A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36A91A182319007763BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TableViewCustomTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36AA1A182319007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE36A91A182319007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE36AB1A182319007763BA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6DCE36AC1A182319007763BA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6DCE36AD1A182319007763BA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6DCE36AE1A182319007763BA</string>
+				<string>6DCE36AF1A182319007763BA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6DCE36AE1A182319007763BA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>92A1135B20D5B174D14B2E27</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TableViewCustom/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6DCE36AF1A182319007763BA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>69E64F40BE6CD3BA2D022CEC</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TableViewCustom/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6DCE36B01A182319007763BA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6DCE36B11A182319007763BA</string>
+				<string>6DCE36B21A182319007763BA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6DCE36B11A182319007763BA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TableViewCustomTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TableViewCustom.app/TableViewCustom</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6DCE36B21A182319007763BA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TableViewCustomTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TableViewCustom.app/TableViewCustom</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6DCE36B61A182515007763BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WDTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36B71A182515007763BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WDTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36B81A182515007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE36B71A182515007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE36B91A182CEF007763BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WDPost.h</string>
+			<key>path</key>
+			<string>Model/WDPost.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36BA1A182CEF007763BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>WDPost.m</string>
+			<key>path</key>
+			<string>Model/WDPost.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36BB1A182CEF007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE36BA1A182CEF007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DCE36BC1A182CF5007763BA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DCE36BD1A182FBF007763BA</string>
+				<string>6DCE36BE1A182FBF007763BA</string>
+				<string>6DCE36B91A182CEF007763BA</string>
+				<string>6DCE36BA1A182CEF007763BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36BD1A182FBF007763BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WDPostManager.h</string>
+			<key>path</key>
+			<string>Model/WDPostManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36BE1A182FBF007763BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>WDPostManager.m</string>
+			<key>path</key>
+			<string>Model/WDPostManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DCE36BF1A182FBF007763BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DCE36BE1A182FBF007763BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DFE56A71A189C720062B792</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WDTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DFE56A81A189C720062B792</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>WDTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DFE56A91A189C720062B792</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DFE56A81A189C720062B792</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DFE56AA1A189DD40062B792</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WDCardView.h</string>
+			<key>path</key>
+			<string>View/WDCardView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DFE56AB1A189DD40062B792</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>WDCardView.m</string>
+			<key>path</key>
+			<string>View/WDCardView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DFE56AC1A189DD40062B792</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6DFE56AB1A189DD40062B792</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6DFE56AD1A189DD80062B792</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6DFE56AA1A189DD40062B792</string>
+				<string>6DFE56AB1A189DD40062B792</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92A1135B20D5B174D14B2E27</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C969635BFA5F5111D97ADBCC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>EB370E2FE5ED16D2673132B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>92A1135B20D5B174D14B2E27</string>
+				<string>69E64F40BE6CD3BA2D022CEC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>6DCE36821A182319007763BA</string>
+</dict>
+</plist>
